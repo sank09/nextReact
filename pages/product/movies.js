@@ -7,17 +7,17 @@ import Rating from 'react-rating';
   const Blog = (props) => {
   
   const router = useRouter();	
-  const { id } = router.query;
+  const { imdbid } = router.query;
   const [movieData,setMovieData]=React.useState({});
   const [moviesErr,setMovieErr]=React.useState('');
   const [isLoading,setLoading]=React.useState(true);
 
-  console.log(id)
+  console.log(imdbid)
 
   useEffect(()=>{
 
 
-    const movieData= fetchMoviData(id);   
+    const movieData= fetchMoviData(imdbid);   
 
     console.log(movieData)
 
@@ -32,7 +32,7 @@ import Rating from 'react-rating';
   
   
 
-  },[id]);
+  },[imdbid]);
 
   const handleMovies=(data)=>{
 

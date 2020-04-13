@@ -88,7 +88,7 @@ export default function Listing(props) {
             {movies.length ? movies.map(dataVal=>{
 
                  return( 
-                    <div style={{cursor:'pointer'}} onClick={(e)=>{window.open(`/product/${dataVal.imdbID}`,"_blank")}}>
+                    <div style={{cursor:'pointer'}} onClick={(e)=>{window.open(`/product/movies?imdbid=${dataVal.imdbID}`,"_blank")}}>
                     
                     <div className="col-sm" style={{marginTop:'20px'}}>
 
