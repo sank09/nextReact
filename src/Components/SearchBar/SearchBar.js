@@ -42,7 +42,7 @@ export const SearchMovies=(props)=>{
 
     return (
         <div>
-            <div className="input-group mb-6">
+            <div className="input-group mb-9">
                     <input 
                      onChange={handleNameSearch}
                      value={movieName}

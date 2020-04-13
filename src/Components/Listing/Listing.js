@@ -88,7 +88,8 @@ export default function Listing(props) {
             {movies.length ? movies.map(dataVal=>{
 
                  return( 
-                    <Link href={`/product/${dataVal.imdbID}`}>
+                    <div style={{cursor:'pointer'}} onClick={(e)=>{window.open(`/product/${dataVal.imdbID}`,"_blank")}}>
+                    
                     <div className="col-sm" style={{marginTop:'20px'}}>
 
                         <div className="card cd_box_shadow" style={{width:'14rem',boxShadow:'5px 10px 18px #888888'}}>
@@ -100,8 +101,9 @@ export default function Listing(props) {
                         </div>
                         </div>
                         
-                    </div> 
-                    </Link>
+                    </div>
+                
+                    </div>
 
                   )   
 
@@ -109,7 +111,7 @@ export default function Listing(props) {
             })
             
             :
-                <div style={{fontSize:'30px'}} >{moviesErr}</div>
+                <div style={{fontSize:'30px',color:'white'}} >{moviesErr}</div>
             }
             </div>
             

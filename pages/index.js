@@ -9,7 +9,7 @@ const Home = () => {
   return(
 
     <Layout>
-      <div style={{fontSize:'30px'}}>
+      <div style={{fontSize:'30px',color:'white'}}>
          Search For movies
       </div>
 
