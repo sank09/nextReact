@@ -45,6 +45,7 @@ export const SearchMovies=(props)=>{
             <div className="input-group mb-9">
                     <input 
                      onChange={handleNameSearch}
+                     onKeyPress={(event)=>{ event.key=="Enter"?handleMovieSearch():null}}
                      value={movieName}
                      type="text" 
                      className="form-control" 
