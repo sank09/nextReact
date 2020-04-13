@@ -73,7 +73,7 @@ import Rating from 'react-rating';
     try{
    
 
-        const movieResponse= await fetch(" http://www.omdbapi.com/?apikey=e33a7867&i="+new_id+"&plot=full");
+        const movieResponse= await fetch("https://www.omdbapi.com/?apikey=e33a7867&i="+new_id+"&plot=full");
         // const movieResponse= await fetch("/movies.json")
         const responseData = await  movieResponse.json();
         console.log(responseData)

@@ -58,7 +58,7 @@ export default function Listing(props) {
         setLoading(true)
         try{
 
-            const movieResponse= await fetch("http://www.omdbapi.com/?i=tt3896198&apikey=e33a7867&s="+encodeURIComponent(movieName));
+            const movieResponse= await fetch("https://www.omdbapi.com/?i=tt3896198&apikey=e33a7867&s="+encodeURIComponent(movieName));
             // const movieResponse= await fetch("/movies.json")
             const responseData = await  movieResponse.json();
             return responseData;
